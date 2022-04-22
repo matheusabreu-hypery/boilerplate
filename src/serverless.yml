@@ -63,23 +63,7 @@ functions:
     events:
       - http:
           path: /
-          method: post
-          cors: true
-      - http:
-          path: /
-          method: put
-          cors: true
-      - http:
-          path: /
-          method: get
-          cors: true
-      - http:
-          path: /
-          method: delete
-          cors: true    
-      - http:
-          path: /{proxy+}
-          method: any
+          method: '*'
           cors: true
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
